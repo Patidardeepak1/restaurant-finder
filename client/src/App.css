@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* Ensures content takes up the available space */
+  padding: 20px;
+}
+
+footer {
+  margin-top: 20px; /* You can adjust this value to control the space between content and footer */
+}

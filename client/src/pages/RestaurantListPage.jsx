@@ -52,9 +52,9 @@ const RestaurantListPage = () => {
     <div className="container mx-auto my-8 px-4">
       <h1 className="text-3xl font-bold mb-4 text-center">Restaurant Finder</h1>
 
-      <div className="flex justify-between mb-6">
+      <div className="flex flex-col md:flex-row justify-between mb-6">
         {/* Cuisine Filter */}
-        <div className="flex items-center">
+        <div className="flex items-center mb-4 md:mb-0">
           <label htmlFor="cuisine" className="mr-2">Cuisine:</label>
           <select
             id="cuisine"

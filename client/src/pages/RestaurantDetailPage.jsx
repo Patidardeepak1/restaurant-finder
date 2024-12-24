@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import BASE_URL from "../config/config";
 import { FaCheck, FaTimes, FaUtensils, FaMapMarkerAlt } from "react-icons/fa"; 
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api"; // Import the required components
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api"; 
 
 const RestaurantDetailPage = () => {
   const { id } = useParams();
@@ -104,7 +104,7 @@ const RestaurantDetailPage = () => {
             <strong>Location:</strong> {restaurant.localityVerbose}
           </p>
           <div className="w-full h-64 bg-gray-200 mt-4 rounded-md">
-            <LoadScript googleMapsApiKey="AIzaSyBgNiDrnbhmB_TkBPNYpRglo5PyqUzDWqE">
+            <LoadScript googleMapsApiKey={import.meta.env.VITE_APP_GOOGLE_MAPS_API_KEY}>
               <GoogleMap
                 mapContainerStyle={mapStyles}
                 center={{
